@@ -1,6 +1,6 @@
 <template>
-  <div class="Login">
-    <img alt="Vue logo" src="../assets/logo.png">
+  <div class="Login container-fluid ">
+    
     <the-login>
     </the-login>
   </div>
