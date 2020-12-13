@@ -41,7 +41,7 @@
   </div>
 </template>
 <script>
-import VueJwtDecode from "vue-jwt-decode";
+
 export default {
   data() {
     return {

@@ -14,7 +14,7 @@
         />
       </div>
       <div class="row ">
-        <div class="card-body border col bg-secondary rounded">
+        <div class="card-body border col bg-secondary rounded shadow ">
           <form @submit.prevent="loginUser">
             <!-- user -->
             <div class="input-group form-group">
