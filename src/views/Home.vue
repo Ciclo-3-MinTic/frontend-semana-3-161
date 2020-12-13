@@ -1,25 +1,15 @@
 <template>
-  <div class="home h-100">
+  <div class="home h-100 ">
     <!--   <the-home>
     </the-home> -->
     <nav-bar> </nav-bar>
-    <div class="container-fluid h-100">
+    <div class="container-fluid  ">
       
-      <div class="row h-100 ">
-            <button
-      class="navbar-toggler position-absolute d-md-none collapsed"
-      type="button"
-      data-toggle="collapse"
-      data-target="#sidebarMenu"
-      aria-controls="sidebarMenu"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="row ">
+      
         <nav
           id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse p-0"
+          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse p-0 h-auto"
         >
   
           <div class="sidebar-sticky pt-1 ">
@@ -69,7 +59,7 @@
           </div>
         </nav>
 
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 ">
           <div
             class="d-flex justify-content-between align-items-center pt-3 pb-2 mb-3 bg-info h-100"
           ></div>
@@ -110,3 +100,10 @@ export default {
   },
 };
 </script>
+<style scoped>
+.home{
+  min-height: 75rem;
+  padding-top: 2.5rem;
+  
+}
+</style>

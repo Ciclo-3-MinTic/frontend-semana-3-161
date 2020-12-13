@@ -4,7 +4,7 @@
       <div class="container">
         <a class="navbar-brand" href="#">Navbar</a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler sticky-top"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
