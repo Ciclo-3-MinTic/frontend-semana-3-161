@@ -1,31 +1,32 @@
 <template>
-  <div class="home h-100 ">
+  <div class="pt-5 vh-100">
     <!--   <the-home>
     </the-home> -->
     <nav-bar> </nav-bar>
-    <div class="container-fluid  ">
+    <div class="container-fluid h-100 ">
       
-      <div class="row ">
+      <div class="row h-100">
       
         <nav
           id="sidebarMenu"
-          class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse p-0 h-auto"
+          class="col-md-3 col-lg-2 d-md-block sidebar collapse p-0 h-sm-100 bg-transparent"
         >
   
-          <div class="sidebar-sticky pt-1 ">
-            <div class="card m-0 p-0 bg-secondary  text-white" >
+          <div class="sidebar-sticky pl-3">
+            <div class="card m-0 p-0  border-light text-white bg-transparent" >
               <div class="card-header p-1 m-0">{{ user.name }}</div>
               <div class="card-body p-0 m-0">{{ user.email }}</div>
               
             </div>
-            <ul class="nav flex-column mt-4">
-              <li class="nav-item">
+
+            <ul class="nav flex-column mt-3 list-group" >
+              <li class="nav-item " >
                 <a class="nav-link active" href="#">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a class="nav-link" href="#">
                   <span data-feather="file"></span>
                   Orders
@@ -101,9 +102,5 @@ export default {
 };
 </script>
 <style scoped>
-.home{
-  min-height: 75rem;
-  padding-top: 2.5rem;
-  
-}
+
 </style>
