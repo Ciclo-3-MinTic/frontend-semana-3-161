@@ -1,21 +1,24 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Login from "../views/Login.vue";
 
 Vue.use(VueRouter);
 const routes = [{
-  path: "/home",
-  name: "home",
-  component: Home,
+  path: "/",
+  name: "login",
+  component: Login,
   meta: {
-    requiresAuth: true
+    isAuth: true
   }
 },
 {
-  path: "/",
-  name: "login",
+  path: "/home",
+  name: "home",
   component: () =>
-    import("../views/Login.vue")
+    import("../views/Home.vue"),
+  meta: {
+    requiresAuth: true
+  }
 },
 ];
 const router = new VueRouter({
@@ -28,6 +31,17 @@ router.beforeEach((to, from, next) => {
     if (localStorage.getItem("jwt") == null) {
       next({
         path: "/"
+      });
+    } else {
+      next();
+    }
+  } else {
+    next();
+  }
+  if (to.matched.some(record => record.meta.isAuth)) {
+    if (localStorage.getItem("jwt") != null) {
+      next({
+        path: "/home"
       });
     } else {
       next();
