@@ -18,51 +18,42 @@
               <div class="card-body p-0 m-0">{{ user.email }}</div>
               
             </div>
-
-            <ul class="nav flex-column mt-3 list-group" >
-              <li class="nav-item " >
-                <a class="nav-link active" href="#">
-                  <span data-feather="home"></span>
-                  Dashboard <span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="#">
-                  <span data-feather="file"></span>
-                  Orders
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="shopping-cart"></span>
-                  Products
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="users"></span>
-                  Customers
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="bar-chart-2"></span>
-                  Reports
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span data-feather="layers"></span>
-                  Integrations
-                </a>
-              </li>
-            </ul>
+            <div class="list-group mt-3 bg-transparent">
+            <button class="list-group-item-action d-flex justify-content-between btn btn-light mb-1" type="button">
+                  Lorem.
+                  <span class="badge badge-info badge-pill ">14</span> 
+            </button>
+            <button class="list-group-item-action d-flex justify-content-between  btn btn-light" type="button">
+                  Lorem.
+                  <span class="badge badge-danger badge-pill">3</span> 
+            </button>
+           
+            </div>
+            <div class="list-group mt-3">
+            <button class="list-group-item list-group-item-action " type="button">
+                  Lorem, ipsum.
+                  
+            </button>
+            <button class="list-group-item list-group-item-action " type="button">
+                  Lorem, ipsum. 
+            </button>
+            <button class="list-group-item list-group-item-action " type="button">
+                  Lorem, ipsum. 
+            </button>
+            <button class="list-group-item list-group-item-action " type="button">
+                  Lorem, ipsum.  
+            </button>
+            <button class="list-group-item list-group-item-action " type="button">
+                  Lorem, ipsum.  
+            </button>
+            </div>
+              
           </div>
         </nav>
 
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 ">
           <div
-            class="d-flex justify-content-between align-items-center pt-3 pb-2 mb-3 bg-info h-100"
+            class="d-flex justify-content-between align-items-center pt-3 pb-2 mb-3 bg-secondary h-100"
           ></div>
         </main>
       </div>
