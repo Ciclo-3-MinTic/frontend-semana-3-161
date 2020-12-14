@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="body">
     
     <router-view/>
   </div>
@@ -26,5 +26,12 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+.body {
+  background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  
 }
 </style>

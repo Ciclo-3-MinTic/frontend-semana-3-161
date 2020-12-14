@@ -1,7 +1,7 @@
 <template>
-  <div class="row justify-content-center mt-5">
-    <div class="card border-0 col col-sm-10 col-md-8 col-lg-4 mx-5">
-      <div class="card-header bg-transparent border-0">
+  <div class="row justify-content-center pt-5 ">
+    <div class="card border-0 col col-sm-10 col-md-8 col-lg-4 mx-5 bg-transparent">
+      <div class="card-header bg-transparent border-0 ">
         <img
           alt="logo-login"
           src="@/assets/login.svg"
@@ -13,13 +13,13 @@
           class="w-25 img-fluid d-lg-none d-sm-inline d-none"
         />
       </div>
-      <div class="row ">
-        <div class="card-body border col bg-secondary rounded shadow ">
+      <div class="row bg-blue">
+        <div class="card-body border col bg-transparent rounded shadow ">
           <form @submit.prevent="loginUser">
             <!-- user -->
             <div class="input-group form-group">
               <div class="input-group-prepend">
-                <span class="input-group-text bg-primary">
+                <span class="input-group-text bg-yellow">
                   <img
                     alt="Vue logo"
                     src="@/assets/user.svg"
@@ -38,7 +38,7 @@
             <!-- password -->
             <div class="input-group form-group">
               <div class="input-group-prepend">
-                <span class="input-group-text bg-primary">
+                <span class="input-group-text bg-yellow">
                   <img
                     alt="Vue logo"
                     src="@/assets/key.svg"
@@ -55,16 +55,16 @@
               />
             </div>
 
-            <div class="text-white form-check form-group d-flex justify-content-between">
+            <div class="form-check form-group d-flex justify-content-between">
               
               <input class="form-check-input " type="checkbox" name="Remember" id="Remember" disabled/>
-              <label class="form-check-label text-white" for="Remember">
+              <label class="form-check-label text-dark" for="Remember">
                 Remember Me
               </label>
               <input
                 type="submit"
                 value="Login"
-                class="btn btn-primary float-right"
+                class="btn  bg-yellow float-right"
               />
             </div>
             
@@ -115,16 +115,20 @@ export default {
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css?family=Numans");
 
-html,
-body {
-  background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  font-family: "Numans", sans-serif;
+.bg-blue{
+  background-color: rgba(111, 227, 255, 0.7);
+ 
 }
+.bg-yellow{
+  background-color: rgb(248, 236, 125);
+
+}
+.bg-yellow:hover{
+  background-color: rgb(255, 201, 164);
+
+}
+
 
 .input-group-prepend span {
   width: 50px;
