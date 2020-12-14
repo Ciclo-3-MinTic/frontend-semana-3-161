@@ -1,13 +1,13 @@
 <template>
-  <div class="pt-5 vh-100">
+  <div class="pt-5">
    
     <nav-bar> </nav-bar>
-    <div class="container-fluid h-100 ">
+    <div class="container-fluid ">
       
-      <div class="row h-100">
+      <div class="row ">
       <sidebar-menu>
       </sidebar-menu>
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 ">
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 mt-3 mt-md-0">
             <the-home>
             </the-home>
         </main>

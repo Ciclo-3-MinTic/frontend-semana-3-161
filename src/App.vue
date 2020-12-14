@@ -1,7 +1,10 @@
 <template>
-  <div id="app" class="body">
-    
+  <div id="app">
+    <div>
     <router-view/>
+
+    </div>
+    
   </div>
 </template>
 
@@ -12,8 +15,13 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  height: 100vh;
+  
+  background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg");
+  background-size: cover;
+  height: 100%;
+  min-height: 100vh;
 }
+
 
 #nav {
   padding: 30px;
@@ -27,11 +35,5 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
-.body {
-  background-image: url("http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100%;
-  
-}
+
 </style>
